@@ -9,8 +9,18 @@
 - [Real-Time Gesture Recognition](#real-time-gesture-recognition)
 - [Usage](#usage)
 
+
+
+
+
 ## Overview
 This system detects hand gestures in real time using a webcam and classifies them into predefined labels. It preprocesses the dataset, trains multiple models using GridSearchCV for hyperparameter tuning, and selects the best-performing model for deployment.
+
+The input to the project is a CSV file containing hand landmarks (e.g., x, y, z coordinates of keypoints) extracted from the HaGRID dataset using MediaPipe. The output will be a trained machine learning model capable of classifying hand gestures into predefined classes.
+
+We will gain hands-on experience in data preprocessing, visualization, machine learning model training, and performance evaluation.
+
+https://github.com/user-attachments/assets/340bb5ce-ff58-481e-b283-6ca36b1e7786
 
 ## Installation
 To run this project, install the required dependencies:
