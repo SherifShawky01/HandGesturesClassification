@@ -47,18 +47,18 @@ The best hyperparameters and evaluation metrics for each model:
 - Mean Accuracy: 84%
 - F1 Score: 83%
 - Precision: 83%
-- Recall: 82%
+- Recall: 82.5%
 ## Support Vector Machine (SVM)
 Best Parameters: {'C': 10, 'class_weight': None, 'degree': 4, 'gamma': 'scale', 'kernel': 'poly'}
 - Mean Accuracy: 97%
-- F1 Score: 96%
+- F1 Score: 95.5%%
 - Precision: 96%
 - Recall: 95%
 ## XGBoost
 Best Parameters: 
 - {'colsample_bytree': 1.0, 'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.7}
 - Mean Accuracy: 92%
-- F1 Score: 91%
+- F1 Score: 90.5%
 - Precision: 91%
 - Recall: 90%
 # The best model selected based on test accuracy is SVM.
