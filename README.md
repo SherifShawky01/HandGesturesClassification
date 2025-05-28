@@ -42,26 +42,18 @@ The dataset was split into training (90%) and testing (10%) subsets using train_
 ## Best Model Results
 The best hyperparameters and evaluation metrics for each model:
 
-## Random Forest
-- Best Parameters: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
-- Mean Accuracy: 84%
-- F1 Score: 83%
-- Precision: 83%
-- Recall: 82.5%
-## Support Vector Machine (SVM)
-Best Parameters: {'C': 10, 'class_weight': None, 'degree': 4, 'gamma': 'scale', 'kernel': 'poly'}
-- Mean Accuracy: 97%
-- F1 Score: 95.5%%
-- Precision: 96%
-- Recall: 95%
-## XGBoost
-Best Parameters: 
-- {'colsample_bytree': 1.0, 'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.7}
-- Mean Accuracy: 92%
-- F1 Score: 90.5%
-- Precision: 91%
-- Recall: 90%
-# The best model selected based on test accuracy is SVM.
+The models were evaluated based on their accuracy, precision, recall, and F1-score. Below is a summary of the results:
+
+| **Model**              | **Accuracy** | **Precision** | **Recall** | **F1-Score** |
+|-------------------------|--------------|---------------|------------|--------------|
+| SVM                    | **0.97**     | **0.97**      | **0.97**   | **0.97**     |
+| Logistic Regression     | 0.89         | 0.89          | 0.89       | 0.89         |
+| Random Forest           | 0.85         | 0.85          | 0.85       | 0.85         |
+| XGBoost                 | 0.72         | 0.72          | 0.72       | 0.72         |
+| Decision Tree           | 0.65         | 0.66          | 0.63       | 0.63         |
+
+### Performance Comparison Chart
+![Model Performance Comparison](results/model_comparison.png)
 
 ## Real-Time Gesture Recognition
 After training, the best model is used for real-time classification. MediaPipe extracts hand landmarks, and the trained model predicts the gesture. Results are displayed on the webcam feed.
