@@ -53,7 +53,7 @@ The models were evaluated based on their accuracy, precision, recall, and F1-sco
 | Decision Tree           | 0.65         | 0.66          | 0.63       | 0.63         |
 
 ### Performance Comparison Chart
-![Model Performance Comparison](results/model_comparison.png)
+![Model Performance Comparison](Results/model_comparison.png)
 
 ## Real-Time Gesture Recognition
 After training, the best model is used for real-time classification. MediaPipe extracts hand landmarks, and the trained model predicts the gesture. Results are displayed on the webcam feed.
